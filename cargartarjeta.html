@@ -1,0 +1,101 @@
+<!DOCTYPE HTML>
+<html lang="es">
+<head>
+  <meta name="viewport" content="width=device-width, iniitial-scale=1.0">
+  <meta charset="UTF-8">
+  <title>Index</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="IntegradorCSS.css">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+    <html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Titulo de la Página en cuestión</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/CSSIntegrador.css" rel="stylesheet">
+    <script>
+        // Función que muestra el popup del boton
+        function mostrarAlerta() {
+            alert('¡Listo!');
+        }
+    </script>
+</head>
+
+
+ <!-- No olvidar reemplazar los # con links en los href!!! -->
+<body>
+
+      <nav class="navbar navbar-light bg-light">
+        <div class="container-fluid d-flex justify-content-between align-items-center">
+            <a class="navbar-brand" href="#">
+                <img src="logo.png" alt="LogoTelemaster" class="logo">
+            </a>
+            
+            <div>
+                <a class="btn btn-sm btn-personalizado" href="recargar-saldo.html">Recargar Saldo</a>
+                <a class="btn btn-sm btn-personalizado" href="paquetes.html">Contratar Paquete</a>
+                <a class="btn btn-sm btn-personalizado" href="pagar-factura.html">Pagar Factura</a>
+                <a class="btn  btn-sm btn-personalizado" href="index.html"><img src="casita.png" alt="Imagen Casa"></a>
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="border rounded-3 p-4 shadow-sm w-100 d-flex justify-content-center cuadro">
+    <h2>Recargá Tu Chip Telemundo</h2>
+
+    </div>
+
+     <div class="container mt-5 contenido">
+            <div class="form text-center border rounded-3">
+            <div class="cuadro">
+                <p>Pago con tarjeta de crédito o débito</p>
+            </div>
+
+                <form action="pagina_tarjeta_integrador.html" method="POST"> <!-- No tenemos pensado almacenar los datos asi que en su lugar solo enviaremos todo a la siguiente página-->
+                    
+    
+
+                <div class="row g-1">
+                    <div class="col-md-6 mb-3">
+                       <label for="Titular">Nombre del Titular</label>
+                        <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Introduce tu nombre como figura en tu Documento" required>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                       <label for="NroTarjeta">Número de Tarjeta</label>
+                        <input type="number" class="form-control" id="NroTarjeta" name="NroTarjeta" placeholder="Introduce el numero de la tarjeta sin espacios." required>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                       <label for="Fecha">Fecha de Expiración.</label>
+                        <input type="month" class="form-control" id="mesaño" name="mesaño"  required>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                       <label for="Cod">Código de Seguridad</label>
+                        <input type="text" class="form-control" id="Cod" name="Cod" placeholder="3 digitos" required>
+                    </div>
+                </div>
+
+                <div class="boton-no-estirado"><label class=" btn btn-primary" onclick="mostrarAlerta()">Pagar</label>
+                </div>
+                
+            </div>
+                
+            </form>
+
+
+
+    <footer class="footer text-center">
+        <br><br>
+        <p>&copy; 2024 Página grupo 32. FCEFyN</p>
+        <p><a href="#">Política de Privacidad</a> | <a href="#">Términos y Condiciones</a></p>
+        <div>
+            <a class="btn1" href="https://web.whatsapp.com/"><img src="whatsapp.png" alt="Imagen Warsa" width="32px" height="32px"></a>
+            <a class="btn2" href="https://mitelefe.com/"><img src="telefono.png" alt="Imagen Telefono" width="32px" height="32px"></a>
+            <a class="btn3" href="https://workspace.google.com/intl/es-419/gmail/"><img src="correo.png "width="40px" height="40px" alt="Imagen Mail"></a>
+        </div>
+</footer>
+</body>
